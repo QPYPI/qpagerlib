@@ -89,7 +89,7 @@ public class CirclePageIndicator extends View implements PageIndicator {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CirclePageIndicator, defStyle, R.style.Widget_CirclePageIndicator);
 
         mCentered = a.getBoolean(R.styleable.CirclePageIndicator_centered, defaultCentered);
-        mOrientation = a.getInt(R.styleable.CirclePageIndicator_orientation, defaultOrientation);
+        mOrientation = a.getInt(R.styleable.CirclePageIndicator_orientations, defaultOrientation);
         mPaintPageFill = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaintPageFill.setStyle(Style.FILL);
         mPaintPageFill.setColor(a.getColor(R.styleable.CirclePageIndicator_pageColor, defaultPageColor));
